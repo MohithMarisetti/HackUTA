@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+	<div class = "container">
+		<div>
+			<form id="submitDet" class="form-inline">
+				  <div class="form-group">
+					<label for="RoomNo">RoomNo</label>
+					<input type="text" class="form-control" id="RoomNo" placeholder="RoomNo">
+				  </div>
+				  <div class="form-group">
+					<label for="city">roomend</label>
+					<input type="text" class="form-control" id="city" placeholder="city">
+				  </div>
+				  <button type="submit" class="btn btn-default">Send invitation</button>
+				</form>
+		</div>
+	</div>
+	<!-- jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		$("#submitDet").submit(function(){
+			alert("indshdbvsj");
+			var room = $("#RoomNo").val();
+			var roomend = $("#city").val();
+			console.log(roomend);
+			
+			var link = "http://127.0.0.1:5000/showroomfinal.html/"+room+'/'+roomend+'';
+			alert(link);
+			console.log(link);
+			window.location.assign(link);
+		});
+	</script>
+		
+</body>
+</html>

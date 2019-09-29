@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <div class="col-md-offset-4">
+                <div><a href="/takePic"></div>
+                
+                <div class="row">
+                  <div class="col-xs-6 col-md-5">
+                    <a href="/takePic" class="thumbnail" style="height:300px;width:100%;padding:28%;text-decoration:none;border:4px dashed">
+                      <!--<img src="/static/images/default.png" alt="/static/images/default.png">-->
+                      <span class="col-md-12 glyphicon glyphicon-camera" aria-hidden="true" style="font-size:xx-large;padding-left:39%"></span>
+                      <span class="col-md-12" style="font-size:large;padding-left:28%;"> Take a  Picture</span>
+                      
+                    </a>
+                    <p>Or Upload a Picture</p>
+                    <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+                     <input id="chooseFile" type = "file" name = "file" />
+                     <input class="btn btn-primary" type = "submit"/>
+                  </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+	
+</body>
+</html>
